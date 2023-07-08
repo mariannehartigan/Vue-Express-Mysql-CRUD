@@ -1,10 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import UpdateMood from "../components/UpdateMood.vue"
 
 const routes = [
   {
     name: "Index",
     path: "/",
     component: () => import('../views/Index.vue')
+  },
+  {
+    name: "UpdateMood",
+    path: "/updatemood/:id",
+    component: UpdateMood
   }
 ]
 
